@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: auto;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+  font-family: 'Cardo', serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 320px;
+  color: #250404;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+h1 {
+  font-variant: small-caps;
+  font-size: 40px;
+}
+
+.photo {
+  border-radius: 50px;
+}
+
+.photoLine {
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-evenly;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+
+.photo-flex {
+  background-color: #fff;
+}
+
+.surname {
+  background-color: #fff;
+  align-self: center;
+  margin-left: -10%;
+}
+
+.header {
+    background-color: #88fa99;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+}
+
+.secondLine {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contacts {
+  width: 30%;
+}
+
+.summary {
+  width: 40%;
+}
+
+.programming {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.programming-column {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.skills {
+  height: 300px;
+  width: 100%;
+}
+
+.projects {
+  height: 200px;
+  width: 100%;
+}
+
+.codebox {
+  width: 40%;
+}
+
+.lastLine {
+  display: flex;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.education {
+  width: 30%;
+}
+
+.languages {
+  width: 40%;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 50px;
+    color: rgb(7, 7, 7);
+    transition: .3s;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.container-footer {
+  width: 100%;
+  display: inline-flex;
+  justify-content:space-evenly;
+  background-color: #88fa99;
+}
+
+.footer__img {
+  width: 86px;
+  height: 32px;
+}
+
+.link-text {
+  color: #13a0ce;
+}
+
+.link-git {
+  color: black;
+  font-size: 20px;
+}
