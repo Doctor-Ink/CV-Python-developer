@@ -105,19 +105,19 @@
                 <div class="codebox">
                 <section id="code">
                     <h2 >Code</h2>
-                    <pre ><code>  def binary_search(list, item):
-      low = 0
-      high = len(list) - 1
-      while low <= high:
-          mid = (low + high) // 2
-          guess = list[mid]
-          if guess == item:
-              return mid
-          if guess > item:
-              high = mid - 1
-          else:
-              low = mid + 1
-      return None
+                    <pre ><code>def binary_search(list, item):  # В переменных low и high хранятся границы
+  low = 0                       # той части списка, в которой выполняется поиск
+  high = len(list) - 1
+  while low <= high:            # <-- пока эта часть не сократится до одного элемента...
+      mid = (low + high) // 2   # <-- проверяем средний элемент
+      guess = list[mid]
+      if guess == item:         # <-- значение найдено
+          return mid
+      if guess > item:          # <-- Много
+          high = mid - 1
+      else:                     # <-- Мало
+          low = mid + 1
+  return None                   # <-- Значение не существует
                     </code></pre>
                 </section>
                 </div>
