@@ -91,10 +91,6 @@ h1 {
   width: 100%;
 }
 
-.projects {
-  height: 150px;
-  width: 100%;
-}
 
 .codebox {
   width: 50%;
@@ -106,6 +102,14 @@ h1 {
   display: flex;
   width: 100%;
   margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 5%;
+  justify-content: center;
+}
+
+.projects {
+  height: 150px;
+  width: 25%;
 }
 
 .education {
