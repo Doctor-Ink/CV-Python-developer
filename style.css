@@ -100,7 +100,7 @@ h1 {
 
 .lastLine {
   display: flex;
-  width: 100%;
+  width: 95%;
   margin-bottom: 50px;
   margin-top: 20px;
   margin-left: 5%;
@@ -117,7 +117,7 @@ h1 {
 }
 
 .languages {
-  width: 40%;
+  width: 30%;
 }
 
 .container {
