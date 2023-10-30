@@ -37,7 +37,7 @@
               <section >
                 <div class="photoLine">
                     <div class="photo-flex">
-                      <img src="assets/img/avatar_photo.jpg" alt="my avatar" height="200" class="photo">
+                      <img src="assets/img/in_hat_1.jpg" alt="my_avatar" height="200" class="photo">
                     </div>
                     <div class="surname">
                       <h1 >Aliaksei Biazusau</h1>
@@ -66,8 +66,15 @@
                 <div class="summary">
                   <section id="summary">
                     <h2 >Summary</h2>
-                    <p>
-                        I am currently working several small web projects. My goal is to learn everything new and exciting. I love to code and sport. I can(love) spend a lot of time doing what interests me. My core strengths are in problem solving and fast learning.I want to get knowledge and skills that will be enough for employment in a company.
+                    <p class="summary-text">
+                        &nbsp;&nbsp;&nbsp;I am currently working several small web projects. 
+                        My goal is to learn everything new and exciting. 
+                        I love to code and sport. I can(love) spend a lot of time doing what interests me. 
+                        My core strengths are in problem solving and fast learning.
+                        I want to get knowledge and skills that will be enough for employment in a company.<br>
+                        &nbsp;&nbsp;&nbsp;Now I need employment in a company where remote work is possible. 
+                        Due to current circumstances, you may have to work remotely.<br>
+                        &nbsp;&nbsp;&nbsp;Currently ready to work in an office as a team.
                     </p>
                 </section>
                 </div>
@@ -95,11 +102,19 @@
                 <div class="codebox">
                 <section id="code">
                     <h2 >Code</h2>
-                    <pre ><code>for i in 'hello world':
-  if i == 'a':
-    break
-else:
-  print("The letter 'a' is not in the line")
+                    <div>my code from 6kyu of codewars bellow</div>
+                    <pre ><code>
+          def rev_rot(strng, sz):
+            result_str = []
+            if sz == 0:
+                return ''
+            for x in range(0, int(len(strng)/sz)):
+                chunk = strng[x * sz : (x + 1) * sz]
+                if sum([int(x) ** 3 for x in chunk]) % 2 == 0:
+                    result_str += chunk[::-1]
+                elif sum([int(x) ** 3 for x in chunk]) % 2 != 0:
+                    result_str += chunk[1::] + chunk[:1]
+            return ''.join(result_str)
                     </code></pre>
                 </section>
                 </div>
