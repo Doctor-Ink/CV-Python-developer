@@ -23,6 +23,7 @@
                   <li class="nav-list"><a href="#summary" class="nav-link">Summary</a></li> 
                   <li class="nav-list"><a href="#skills" class="nav-link">Skills</a></li>          
                   <li class="nav-list"><a href="#code" class="nav-link">Code</a></li>
+                  <li class="nav-list"><a href="#projects" class="nav-link">Projects</a></li>
                   <li class="nav-list"><a href="#education" class="nav-link">Education</a></li>
                   <li class="nav-list"><a href="#languages" class="nav-link">Languages</a></li>
               </ul>
@@ -30,12 +31,13 @@
           </div>
       </header>
     </div>
+    
       <main class="main" >
             <div class="container">
               <section >
                 <div class="photoLine">
                     <div class="photo-flex">
-                      <img src="assets/img/avatar_photo.jpg" alt="my avatar" height="200" class="photo">
+                      <img src="assets/img/in_hat_1.jpg" alt="my_avatar" height="200" class="photo">
                     </div>
                     <div class="surname">
                       <h1 >Aliaksei Biazusau</h1>
@@ -48,16 +50,15 @@
                   <section id="contacts" >
                       <h2 >Contacts</h2>
                       <ul >
-                        <li > Address: Belarus, Vitebskaya obl.city Glubokoe</li>
+                        <li > Address: Belarus, Minsk / Glubokoe</li>
                         <li >
                           Email: <a class="link-text" href="mailto:bezusovalex@gmail.com" title="email">bezusovalex@gmail.com</a>
-                          <a class="link-text" href="mailto:bezusov.88@mail.ru" title="email">bezusov.88@mail.ru</a>
                         </li>
                         <li >
                           Github: <a class="link-text" href="https://github.com/Doctor-Ink " title="github">Doctor-Ink </a>
                         </li>
                         <li > 
-                          Telegram: <a class="link-text" href="https://t.me/aretooth" title="telegram">@aretooth</a>
+                          Telegram: <a class="link-text" href="https://t.me/Doctor_ink" title="telegram">@Doctor_ink</a>
                         </li>
                       </ul>
                   </section>
@@ -65,8 +66,15 @@
                 <div class="summary">
                   <section id="summary">
                     <h2 >Summary</h2>
-                    <p>
-                        I am currently working several small web projects. My goal is to learn everything new and exciting. I love to code and sport. I can(love) spend a lot of time doing what interests me. My core strengths are in problem solving and fast learning.I want to get knowledge and skills that will be enough for employment in a company.
+                    <p class="summary-text">
+                        &nbsp;&nbsp;&nbsp;I am currently working several small web projects. 
+                        My goal is to learn everything new and exciting. 
+                        I love to code and sport. I can(love) spend a lot of time doing what interests me. 
+                        My core strengths are in problem solving and fast learning.
+                        I want to get knowledge and skills that will be enough for employment in a company.<br>
+                        &nbsp;&nbsp;&nbsp;Now I need employment in a company where remote work is possible. 
+                        Due to current circumstances, you may have to work remotely.<br>
+                        &nbsp;&nbsp;&nbsp;Currently ready to work in an office as a team.
                     </p>
                 </section>
                 </div>
@@ -78,49 +86,35 @@
                       <section id="skills">
                           <h2 >Skills</h2>
                           <ul >
-                            <li> Development: Python, HTML5, CSS3, JavaScript.</li>
+                            <li> Development: Python, HTML, CSS, JS, Django, Jupiter.</li>
                             <li>
-                              Frameworks and libraries: open CV, NumPy, Random, termcolor, zipfile, os, time, shutil, simpleDraw, collections, functools, threading. 
+                              Frameworks and libraries: aiogram, pillow, selenium, bs4, json, requests, API, open CV, NumPy, os, threading, multiprocessing, re, GUI, PyQt5, tkinter, sqlite3, unittest. 
+                            </li>
+                            <li>
+                              Feature: docker, blackbird, undetected_chromedriver, .py to .exe
                             </li>
                             <li> Version control: GIT, Github.</li>
                             <li> Additionally: PyCharm, Visual Studio Code, Node JS.</li>
                           </ul>
                       </section>
                     </div>
-                    <div class="projects">
-                      <section id="projects">
-                          <h2 >Projects</h2>
-                          <ul >
-                            <li>
-                              <a class="link-text" href="https://github.com/Doctor-Ink/game_bulls_and_cows_.git">game - bulls and cows</a> 
-                            </li>          
-                            <li >
-                              <a class="link-text" href="https://github.com/Doctor-Ink/binary_search.git">binary search</a>
-                            </li>
-                          </ul>
-                        </section>
-                    </div>
                 </div>
                 <div class="codebox">
                 <section id="code">
                     <h2 >Code</h2>
-                    <pre ><code>  def binary_search(list, item):
-      low = 0
-      high = len(list) - 1
-      while low <= high:
-          mid = (low + high) // 2
-          guess = list[mid]
-          if guess == item:
-              return mid
-          if guess > item:
-              high = mid - 1
-          else:
-              low = mid + 1
-      return None
-  
-  my_list = [1, 3, 5, 7, 9]
-  print(binary_search(list=my_list, item=3))
-  print(binary_search(list=my_list, item=-1))
+                    <div>my code from 6kyu of codewars bellow</div>
+                    <pre ><code>
+          def rev_rot(strng, sz):
+            result_str = []
+            if sz == 0:
+                return ''
+            for x in range(0, int(len(strng)/sz)):
+                chunk = strng[x * sz : (x + 1) * sz]
+                if sum([int(x) ** 3 for x in chunk]) % 2 == 0:
+                    result_str += chunk[::-1]
+                elif sum([int(x) ** 3 for x in chunk]) % 2 != 0:
+                    result_str += chunk[1::] + chunk[:1]
+            return ''.join(result_str)
                     </code></pre>
                 </section>
                 </div>
@@ -128,22 +122,54 @@
 
               <div class="lastLine">
 
+                <div class="projects">
+                  <section id="projects">
+                      <h2 >Projects</h2>
+                      <ul >
+                        <li>
+                          <a class="link-text" href="https://t.me/bulls_and_cows_my_bot">game - bulls and cows(tg_bot)</a> 
+                        </li>          
+                        <li >
+                          <a class="link-text" href="https://github.com/Doctor-Ink/binary_search.git">binary search</a>
+                        </li>
+                        <li >
+                          <a class="link-text" href="https://github.com/Doctor-Ink/Parcer_yandex_map.git">Parcer yandex maps</a>
+                        </li>
+                        <li >
+                          <a class="link-text" href="https://github.com/Doctor-Ink/RECOVERY_Forgotten_password_EXCEL">Recovery password EXCEL</a>
+                        </li>
+                        <li >
+                          <a class="link-text" href="https://www.codewars.com/users/rsschool_906b1078a9d13902">codewars - 4 kyu</a>
+                        </li>
+
+                      </ul>
+                    </section>
+                </div>
+
                 <div class="education">
                   <section id="education">
                       <h2 >Education</h2>
                       <ul >
                         <li ><span> Industrial engineering BNTU (Belarusian National Technical University)</span></li>
                         <li ><span> Skillbox - Python Development Courses</span></li>
-                        <li ><span> <a class="link-text" href="https://rs.school/js/">JS/FE Pre-School 2022Q2</a> at the moment </span></li>
+
+                        <li ><span> <a class="link-text" href="https://rs.school/js/">JS/FE Pre-School 2022Q4</a> studied twice - got a developer achievement </span></li>
+                        
                       </ul>
                   </section>
                 </div>
+                
                 <div class="languages">
                   <section id="languages" >
                       <h2 >Languages</h2>
                       <ul>
                         <li>Russian — Native</li>
-                        <li>English — A2 — Pre-Intermediate</li>
+                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A1</a> - <a class="link-text" href="assets/img/Beginner_sertificate.jpg">certificate beginner</a></li>
+
+                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A2</a> - <a class="link-text" href="assets/img/Elementary.jpg">certificate Elementary</a></li>
+                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — B1</a> — just now</li>
+
+
                       </ul>
                   </section>
                 </div>
@@ -156,7 +182,7 @@
                 <a class="link-git" href="https://github.com/Doctor-Ink" > GitHub:  Doctor-Ink </a>
               </div>
               <div>
-                © 2022 
+                © 2023 
               </div>
               <div>
                 <a href="https://rs.school/js/" target="_blank"> 
