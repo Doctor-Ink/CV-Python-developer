@@ -1,5 +1,6 @@
 * {
-    box-sizing: inherit;
+    box-sizing: border-box;
+    margin: 0 auto;
     &:before,
     &:after {
         box-sizing: inherit;
@@ -59,6 +60,7 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   min-width: 320px;
+  max-width: 100%;
   color: #250404;
   display: flex;
   padding: 0;
@@ -77,6 +79,7 @@ h1 {
 
 .photoLine {
   margin-top: 20px;
+  width: 100%;
   display: flex;
   justify-content:space-evenly;
   background-color: #fff;
