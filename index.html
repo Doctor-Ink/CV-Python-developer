@@ -13,11 +13,11 @@
 </head>
 
 <body>
-  <div>
-    <div>
-      <header class="header">
-          <div class="container">
-            <nav class="nav" > 
+  <div class="container-body">
+    <div class="item-body">
+      <header>
+          <div class="header">
+            <nav> 
               <ul class="nav-list">
                   <li class="nav-list"><a href="#contacts" class="nav-link">Contacts</a></li>
                   <li class="nav-list"><a href="#summary" class="nav-link">Summary</a></li> 
@@ -32,6 +32,7 @@
       </header>
     </div>
     
+    <div class="item-body">
       <main class="main" >
             <div class="container">
               <section >
@@ -104,17 +105,21 @@
                     <h2 >Code</h2>
                     <div>my code from 6kyu of codewars bellow</div>
                     <pre ><code>
-          def rev_rot(strng, sz):
-            result_str = []
-            if sz == 0:
-                return ''
-            for x in range(0, int(len(strng)/sz)):
-                chunk = strng[x * sz : (x + 1) * sz]
-                if sum([int(x) ** 3 for x in chunk]) % 2 == 0:
-                    result_str += chunk[::-1]
-                elif sum([int(x) ** 3 for x in chunk]) % 2 != 0:
-                    result_str += chunk[1::] + chunk[:1]
-            return ''.join(result_str)
+    def binary_search(lst, item):   
+      low = 0   
+      high = len(lst) - 1
+      while low <= high:
+        ind = (low + high) // 2
+        if item == lst[ind]:
+          if lst[ind] == lst[ind-1]:
+              high = ind -1
+          else:
+              return ind
+        elif lst[ind] > item:
+            high = ind - 1
+        else:
+            low = ind + 1
+      return 0
                     </code></pre>
                 </section>
                 </div>
@@ -181,6 +186,8 @@
               </div>
           </div>
       </main>
+    </div>
+    <div class="item-body">
       <footer>
           <div class="container-footer">
               <div>
@@ -196,6 +203,7 @@
               </div>
           </div>
       </footer>
+    </div>
   </div>
 </body>
 </html>
