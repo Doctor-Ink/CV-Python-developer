@@ -21,11 +21,6 @@
   width: 100%;  
 }
 
-@media (min-width: 990px) {
-  .item-body {
-    flex: 0 0 auto;
-  }
-}
 
 h1 {
   font-variant: small-caps;
@@ -37,57 +32,58 @@ h2 {
   font-size: 30px;
 }
 
-.header {
-  background-color: #88fa99;
-}
-
-
-/* 
-body {
-  width: 100%;
-  min-height: 100vh;
-  min-width: 320px;
-  max-width: 100%;
-  color: #250404;
-  padding: 0;
-}
-
 .photo {
   border-radius: 50px;
 }
 
-.photoLine {
-  margin-top: 20px;
-  width: 100%;
+nav {
+  background-color: #88fa99;
+}
+/* навигация в одну строку */
+.nav-list {
+  padding: 1%;
   display: flex;
-  justify-content:space-evenly;
-  background-color: #fff;
-  margin-bottom: 50px;
+  width: 60%;
 }
 
-.photo-flex {
-  background-color: #fff;
+.nav-list li {
+  max-width: 100px;
+  display: flex;
+  padding: 1% ;
 }
 
-.surname {
-  background-color: #fff;
-  align-self: center;
-  margin-left: -10%;
+.nav-list li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(7, 7, 7);
+}
+
+ul.nav-list li a:hover {
+  text-decoration: underline;
+  color: rgb(58, 0, 0);
+ }
+
+/* конец навигации */ 
+
+/* part of menu burger */
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+/*  */
+/* line number one with photo */
+
+.photoLine {
+  display: flex;
+  padding: 1%; 
+  align-items: center;
 }
 
 .secondLine {
-  background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.contacts {
-  width: 30%;
-}
-
-.summary {
-  width: 50%;
+  flex-wrap: wrap;
+  padding: 1%; 
 }
 
 .summary-text {
@@ -96,9 +92,37 @@ body {
 
 .programming {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  padding: 1%;  
+}
+
+.lastLine {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;  
+}
+  
+.container-footer {
+  display: flex;
+  background-color: #56fa6f;
+}
+
+.footer__img {
   height: 100%;
-  padding-bottom: 50px;
+}
+
+
+/* 
+.photoLine {
+  margin-top: 20px;
+  width: 100%;
+  justify-content:space-evenly;
+  margin-bottom: 50px;
+}
+
+.secondLine {
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .programming-column {
@@ -110,69 +134,15 @@ body {
   gap: 15px;
 }
 
-.skills {
-  height: 350px;
+body {
   width: 100%;
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 100%;
+  color: #250404;
+  padding: 0;
 }
 
-.codebox {
-  width: 50%;
-  height: 100%;
-  font-size: 16px;
-}
-
-.lastLine {
-  display: flex;
-  width: 95%;
-  margin-bottom: 50px;
-  margin-top: 30px;
-  margin-left: 5%;
-  justify-content: center;
-}
-
-.projects {
-  height: 170px;
-  width: 25%;
-}
-
-.education {
-  width: 30%;
-}
-
-.languages {
-  width: 30%;
-}
-
-.nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-}
-
-.nav-link {
-    position: relative;
-    padding: 0 30px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 50px;
-    color: rgb(7, 7, 7);
-    transition: .3s;
-}
-
-
-.container-footer {
-  width: 100%;
-  display: inline-flex;
-  justify-content:space-evenly;
-  background-color: #88fa99;
-}
-
-.footer__img {
-  width: 86px;
-  height: 32px;
-}
 */
 .link-text {
   color: #13a0ce;
@@ -184,7 +154,7 @@ body {
 } 
 
 /* анимация для телеграмм бота */
-/* :root {
+:root {
   --text: #2B3044;
   --line: #BBC1E1;
   --line-active: #275EFE;
@@ -223,5 +193,5 @@ p {
           --offset: 180px;
       }
   }
-} */
+}
 /* анимация для телеграмм бота */
