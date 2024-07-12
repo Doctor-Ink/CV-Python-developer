@@ -1,202 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>cv</title>
-    <link rel="icon" href="assets/favicon/1__3.ico"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <title>cv</title>
+  <link rel="icon" href="assets/favicon/1__3.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div>
-    <div>
-      <header class="header">
-          <div class="container">
-            <nav class="nav" > 
-              <ul class="nav-list">
-                  <li class="nav-list"><a href="#contacts" class="nav-link">Contacts</a></li>
-                  <li class="nav-list"><a href="#summary" class="nav-link">Summary</a></li> 
-                  <li class="nav-list"><a href="#skills" class="nav-link">Skills</a></li>          
-                  <li class="nav-list"><a href="#code" class="nav-link">Code</a></li>
-                  <li class="nav-list"><a href="#projects" class="nav-link">Projects</a></li>
-                  <li class="nav-list"><a href="#education" class="nav-link">Education</a></li>
-                  <li class="nav-list"><a href="#languages" class="nav-link">Languages</a></li>
-              </ul>
-            </nav>
+  <div class="container-body">
+    <div class="item-body">
+      <header>
+        <nav>
+          <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="nav-list">
+              <li><a href="#contacts" class="nav-item">Contacts</a></li>
+              <li><a href="#summary" class="nav-item">Summary</a></li>
+              <li><a href="#skills" class="nav-item">Skills</a></li>
+              <li><a href="#code" class="nav-item">Code</a></li>
+              <li><a href="#projects" class="nav-item">Projects</a></li>
+              <li><a href="#education" class="nav-item">Education</a></li>
+              <li><a href="#languages" class="nav-item">Languages</a></li>
+            </ul>
           </div>
+        </nav>
       </header>
     </div>
-    
-      <main class="main" >
-            <div class="container">
-              <section >
-                <div class="photoLine">
-                    <div class="photo-flex">
-                      <img src="assets/img/in_hat_1.jpg" alt="my_avatar" height="200" class="photo">
-                    </div>
-                    <div class="surname">
-                      <h1 >Aliaksei Biazusau</h1>
-                      <h2 >Junior Python Developer</h2>
-                    </div>
-                </div>        
+
+    <div class="item-body">
+      <main class="main">
+        <div class="container">
+          <section>
+            <div class="photoLine">
+              <div class="photo-flex">
+                <img src="assets/img/in_hat_1.jpg" alt="my_avatar" height="200" class="photo">
+              </div>
+              <div class="surname">
+                <h1>Aliaksei Biazusau</h1>
+                <h2>Junior Python Developer</h2>
+              </div>
+            </div>
+          </section>
+          <div class="secondLine">
+            <div class="contacts">
+              <section id="contacts">
+                <h2>Contacts</h2>
+                <ul>
+                  <li> Address: Belarus, Minsk / Glubokoe</li>
+                  <li>
+                    Email: <a class="link-text" href="mailto:bezusovalex@gmail.com"
+                      title="email">bezusovalex@gmail.com</a>
+                  </li>
+                  <li>
+                    Github: <a class="link-text" href="https://github.com/Doctor-Ink " title="github">Doctor-Ink </a>
+                  </li>
+                  <li>
+                    Telegram: <a class="link-text" href="https://t.me/Doctor_ink" title="telegram">@Doctor_ink</a>
+                  </li>
+                </ul>
               </section>
-              <div class="secondLine">
-                <div class="contacts">
-                  <section id="contacts" >
-                      <h2 >Contacts</h2>
-                      <ul >
-                        <li > Address: Belarus, Minsk / Glubokoe</li>
-                        <li >
-                          Email: <a class="link-text" href="mailto:bezusovalex@gmail.com" title="email">bezusovalex@gmail.com</a>
-                        </li>
-                        <li >
-                          Github: <a class="link-text" href="https://github.com/Doctor-Ink " title="github">Doctor-Ink </a>
-                        </li>
-                        <li > 
-                          Telegram: <a class="link-text" href="https://t.me/Doctor_ink" title="telegram">@Doctor_ink</a>
-                        </li>
-                      </ul>
-                  </section>
+            </div>
+            <div class="summary">
+              <section id="summary">
+                <h2>Summary</h2>
+                <div class="summary-text">
+                  &nbsp;&nbsp;&nbsp;I am currently working several small web projects.
+                  My goal is to learn everything new and exciting.
+                  I love to code and sport. I can(love) spend a lot of time doing what interests me.
+                  My core strengths are in problem solving and fast learning.
+                  I want to get knowledge and skills that will be enough for employment in a company.<br>
+                  &nbsp;&nbsp;&nbsp;Now I need employment in a company where remote work is possible.
+                  Due to current circumstances, you may have to work remotely.<br>
+                  &nbsp;&nbsp;&nbsp;Currently ready to work in an office as a team.
                 </div>
-                <div class="summary">
-                  <section id="summary">
-                    <h2 >Summary</h2>
-                    <div class="summary-text">
-                        &nbsp;&nbsp;&nbsp;I am currently working several small web projects. 
-                        My goal is to learn everything new and exciting. 
-                        I love to code and sport. I can(love) spend a lot of time doing what interests me. 
-                        My core strengths are in problem solving and fast learning.
-                        I want to get knowledge and skills that will be enough for employment in a company.<br>
-                        &nbsp;&nbsp;&nbsp;Now I need employment in a company where remote work is possible. 
-                        Due to current circumstances, you may have to work remotely.<br>
-                        &nbsp;&nbsp;&nbsp;Currently ready to work in an office as a team.
-                    </div>
-                </section>
-                </div>
-              </div>
+              </section>
+            </div>
+          </div>
 
-              <div class="programming">
-                <div class="programming-column">
-                    <div class="skills">
-                      <section id="skills">
-                          <h2 >Skills</h2>
-                          <ul >
-                            <li> Development: Python, HTML, CSS, JS, Django, Jupiter.</li>
-                            <li>
-                              Frameworks and libraries: aiogram, pillow, selenium, bs4, json, requests, API, open CV, NumPy, os, threading, multiprocessing, re, GUI, PyQt5, tkinter, SQLite, unittest. 
-                            </li>
-                            <li>
-                              Feature: docker, blackbird, undetected_chromedriver, .py to .exe
-                            </li>
-                            <li> Version control: GIT, Github.</li>
-                            <li> Additionally: PyCharm, Visual Studio Code, Node JS.</li>
-                          </ul>
-                      </section>
-                    </div>
-                </div>
-                <div class="codebox">
-                <section id="code">
-                    <h2 >Code</h2>
-                    <div>my code from 6kyu of codewars bellow</div>
-                    <pre ><code>
-          def rev_rot(strng, sz):
-            result_str = []
-            if sz == 0:
-                return ''
-            for x in range(0, int(len(strng)/sz)):
-                chunk = strng[x * sz : (x + 1) * sz]
-                if sum([int(x) ** 3 for x in chunk]) % 2 == 0:
-                    result_str += chunk[::-1]
-                elif sum([int(x) ** 3 for x in chunk]) % 2 != 0:
-                    result_str += chunk[1::] + chunk[:1]
-            return ''.join(result_str)
+          <div class="programming">
+            <div class="skills">
+              <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                  <li> Development: Python, HTML, CSS, JS, Django, Jupiter.</li>
+                  <li>
+                    Frameworks and libraries: aiogram, pillow, selenium, bs4, json, requests, API, open CV, NumPy, os,
+                    threading, multiprocessing, re, GUI, PyQt5, tkinter, SQLite, unittest.
+                  </li>
+                  <li>
+                    Feature: docker, blackbird, undetected_chromedriver, .py to .exe
+                  </li>
+                  <li> Version control: GIT, Github.</li>
+                  <li> Additionally: PyCharm, Visual Studio Code, Node JS.</li>
+                </ul>
+              </section>
+            </div>
+            <div class="codebox">
+              <section id="code">
+                <h2>Code</h2>
+                <div>Some function for to say - Hello world</div>
+                <pre><code>def print_hello_world():
+    """
+    'hello world' is beautifully way
+    """
+    message = "hello world"
+    border = '*' * (len(message) + 4)
+    print(border)
+    print(f"* {message} *")
+    print(border)
+
+# Call the function
+print_hello_world()
                     </code></pre>
-                </section>
-                </div>
-              </div>
-
-              <div class="lastLine">
-
-                <div class="projects">
-                  <section id="projects">
-                      <h2 >Projects</h2>
-                      <ul >        
-                        <li>
-                          <p class="link-text">
-                            game - bulls and cows -->    
-                            <a class="link-text" href="https://t.me/bulls_and_cows_my_bot">
-                                tg_bot
-                                <svg viewBox="0 0 70 36">
-                                    <path d="M6.9739 26.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
-                                </svg>
-                            </a>
-                        </p>
-                        </li>
-                        <li>
-                          <a class="link-text" href="https://t.me/very_cool_echo1_bot">Echo_bot</a>
-                        </li>
-                        <li >
-                          <a class="link-text" href="https://github.com/Doctor-Ink/binary_search.git">binary search</a>
-                        </li>
-                        <li >
-                          <a class="link-text" href="https://github.com/Doctor-Ink/Parcer_yandex_map.git">Parcer yandex maps</a>
-                        </li>
-                        <li >
-                          <a class="link-text" href="https://github.com/Doctor-Ink/RECOVERY_Forgotten_password_EXCEL">Recovery password EXCEL</a>
-                        </li>
-                        <li >
-                          <img alt="Dark Badge" src="https://www.codewars.com/users/rsschool_906b1078a9d13902/badges/small">
-                        </li>
-                      </ul>
-                    </section>
-                </div>
-
-                <div class="education">
-                  <section id="education">
-                      <h2 >Education</h2>
-                      <ul >
-                        <li ><span> Industrial engineering BNTU (Belarusian National Technical University)</span></li>
-                        <li ><span> Skillbox - Python Development Courses</span></li>
-                        <li ><span> <a class="link-text" href="https://rs.school/js/">JS/FE Pre-School 2022Q4</a> studied twice - got a developer achievement </span></li>
-                      </ul>
-                  </section>
-                </div>
-                
-                <div class="languages">
-                  <section id="languages" >
-                      <h2 >Languages</h2>
-                      <ul>
-                        <li>Russian — Native</li>
-                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A1</a> - <a class="link-text" href="assets/img/Beginner_sertificate.jpg">certificate beginner</a></li>
-                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A2</a> - <a class="link-text" href="assets/img/Elementary.jpg">certificate Elementary</a></li>
-                        <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — B1</a> — just now</li>
-                      </ul>
-                  </section>
-                </div>
-              </div>
+              </section>
+            </div>
           </div>
+
+          <div class="lastLine">
+
+            <div class="projects">
+              <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                  <li>
+                    <p class="link-text">
+                      game - bulls and cows -->
+                      <a class="link-text" href="https://t.me/bulls_and_cows_my_bot">
+                        tg_bot
+                        <svg viewBox="0 0 70 36">
+                          <path
+                            d="M6.9739 26.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                        </svg>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a class="link-text" href="https://t.me/very_cool_echo1_bot">Echo_bot</a>
+                  </li>
+                  <li>
+                    <a class="link-text" href="https://github.com/Doctor-Ink/binary_search.git">binary search</a>
+                  </li>
+                  <li>
+                    <a class="link-text" href="https://github.com/Doctor-Ink/Parcer_yandex_map.git">Parcer yandex
+                      maps</a>
+                  </li>
+                  <li>
+                    <a class="link-text" href="https://github.com/Doctor-Ink/RECOVERY_Forgotten_password_EXCEL">Recovery
+                      password EXCEL</a>
+                  </li>
+                  <li>
+                    <picture>
+                      <img alt="Dark Badge" src="https://www.codewars.com/users/rsschool_906b1078a9d13902/badges/small"
+                          srcset="https://www.codewars.com/users/rsschool_906b1078a9d13902/badges/large 1200w,
+                              https://www.codewars.com/users/rsschool_906b1078a9d13902/badges/small 700w,
+                              https://www.codewars.com/users/rsschool_906b1078a9d13902/badges/micro 440w"
+                          sizes="(min-width: 640px) 60vw, 100vw">
+                    </picture>
+                  </li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="education">
+              <section id="education">
+                <h2>Education</h2>
+                <ul>
+                  <li><span> Industrial engineering BNTU (Belarusian National Technical University)</span></li>
+                  <li><span> Skillbox - Python Development Courses</span></li>
+                  <li><span> <a class="link-text" href="https://rs.school/js/">JS/FE Pre-School 2022Q4</a> studied twice
+                      - got a developer achievement </span></li>
+                </ul>
+              </section>
+            </div>
+
+            <div class="languages">
+              <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                  <li>Russian — Native</li>
+                  <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A1</a> - <a
+                      class="link-text" href="assets/img/Beginner_sertificate.jpg">certificate beginner</a></li>
+                  <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — A2</a> - <a
+                      class="link-text" href="assets/img/Elementary.jpg">certificate Elementary</a></li>
+                  <li><a class="link-text" href='https://puzzle-english.com/teacher'>English — B1</a> — just now</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
       </main>
+    </div>
+    <div class="item-body">
       <footer>
-          <div class="container-footer">
-              <div>
-                <a class="link-git" href="https://github.com/Doctor-Ink" > GitHub:  Doctor-Ink </a>
-              </div>
-              <div>
-                © 2024 
-              </div>
-              <div>
-                <a href="https://rs.school/js/" target="_blank"> 
-                <img class="footer__img" src="assets/svg/rs_school_js.svg" alt="rs_school">
-                </a>
-              </div>
+        <div class="container-footer">
+          <div class="footer-item">
+            <a class="link-git" href="https://github.com/Doctor-Ink"> GitHub: Doctor-Ink </a>
           </div>
+          <div class="footer-item">
+            © 2024
+          </div>
+          <div class="footer-item">
+            <a href="https://rs.school/js/" target="_blank">
+              <img class="footer__img" src="assets/svg/rs_school_js.svg" alt="rs_school" width="100" height="100">
+            </a>
+          </div>
+        </div>
       </footer>
+    </div>
   </div>
 </body>
-</html>
 
+</html>
