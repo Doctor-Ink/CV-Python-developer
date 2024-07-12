@@ -38,6 +38,7 @@ h2 {
 
 nav {
   background-color: #88fa99;
+  min-height: 50px;
 }
 /* навигация в одну строку */
 .nav-list {
@@ -103,8 +104,17 @@ ul.nav-list li a:hover {
 }
   
 .container-footer {
+  min-height: 50px;
   display: flex;
   background-color: #56fa6f;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 .footer__img {
@@ -132,15 +142,6 @@ ul.nav-list li a:hover {
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
-}
-
-body {
-  width: 100%;
-  min-height: 100vh;
-  min-width: 320px;
-  max-width: 100%;
-  color: #250404;
-  padding: 0;
 }
 
 */
