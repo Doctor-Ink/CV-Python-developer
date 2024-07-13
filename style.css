@@ -7,20 +7,21 @@
     font-weight: 400;
     line-height: 1.5;
     /* all fonts end */
-    /* &:before,
-    &:after {
-        box-sizing: inherit;
-    } */
 }
+.wraper-right-burger {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .container-body {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 .item-body {
   width: 100%;  
 }
-
 
 h1 {
   font-variant: small-caps;
@@ -40,45 +41,49 @@ nav {
   background-color: #88fa99;
   min-height: 50px;
 }
+.burger-button {
+  display: none;
+}
+
 /* навигация в одну строку */
-.nav-list {
+.burger-ul {
   padding: 1%;
   display: flex;
   width: 60%;
 }
 
-.nav-list li {
+.burger-ul li {
   max-width: 100px;
   display: flex;
   padding: 1% ;
 }
 
-.nav-list li a {
+.burger-ul li a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 800;
   color: rgb(7, 7, 7);
 }
 
-ul.nav-list li a:hover {
+ul.burger-ul li a:hover {
   text-decoration: underline;
   color: rgb(58, 0, 0);
  }
 
 /* конец навигации */ 
 
-/* part of menu burger */
-.burger-checkbox {
-  position: absolute;
-  visibility: hidden;
-}
-/*  */
+
 /* line number one with photo */
 
 .photoLine {
   display: flex;
   padding: 1%; 
+  margin: 0 -5px;
   align-items: center;
+}
+.photo-item {
+  flex: 1 1 auto;
+  margin: 0 5px;
 }
 
 .secondLine {
@@ -113,38 +118,12 @@ ul.nav-list li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .footer__img {
   height: 100%;
 }
 
-
-/* 
-.photoLine {
-  margin-top: 20px;
-  width: 100%;
-  justify-content:space-evenly;
-  margin-bottom: 50px;
-}
-
-.secondLine {
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
-.programming-column {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-*/
 .link-text {
   color: #13a0ce;
 }
